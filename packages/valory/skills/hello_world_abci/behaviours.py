@@ -212,24 +212,25 @@ class PrintMessageBehaviour(HelloWorldABCIBaseBehaviour, ABC):
 class UpdatePrintCountBehaviour(HelloWorldABCIBaseBehaviour, ABC):
     """A behaviour to update the print count and send it in the payload"""
 
-    matching_round =  UpdatePrintCountRound
+    matching_round = UpdatePrintCountRound
 
     def async_act(self) -> Generator:
         """Perform the act"""
-        new_print_count = self.synchronized_data.print_count +1
-        
-        printed_number = f"Agent {self.context.agent_name} (address {self.context.agent_address}) in period {self.synchronized_data.period_count} says: {new_print_count}"
-        self.context.logger.info(f"printed_number={ printed_number}")
+        current_print_count = self.synchronized_data.print_count
+        new_print_count = current_print_count + 1
 
         # Create and send the payload
-        payload = UpdatePrintCountPayload(sender=self.context.agent_address, print_count = new_print_count)
+        payload = UpdatePrintCountPayload(sender=self.context.agent_address, print_count=new_print_count)
+        yield from self.send_a2a_transaction(payload)
         
         # Print the message
-        #print(f"The message has been printed {new_print_count} times")
-
-        yield from self.send_a2a_transaction(payload)
+        print(f"The message has been printed {new_print_count} times")
         yield from self.wait_until_round_end()
         self.set_done()
+
+    def done(self) -> bool:
+        """Check if the behaviour is done"""
+        return self.is_done
 
 
 ######################## edited here#################################
@@ -279,5 +280,33 @@ class HelloWorldRoundBehaviour(AbstractRoundBehaviour):
         CollectRandomnessBehaviour,  # type: ignore
         SelectKeeperBehaviour,  # type: ignore
         PrintMessageBehaviour,  # type: ignore
+        UpdatePrintCountBehaviour,  # type: ignore
         ResetAndPauseBehaviour,  # type: ignore
     }
+
+
+
+
+
+'''
+class UpdatePrintCountBehaviour(HelloWorldABCIBaseBehaviour, ABC):
+    """A behaviour to update the print count and send it in the payload"""
+
+    matching_round =  UpdatePrintCountRound
+
+    def async_act(self) -> Generator:
+        """Perform the act"""
+        new_print_count = self.synchronized_data.print_count +1
+        
+        printed_number = f"Agent {self.context.agent_name} (address {self.context.agent_address}) in period {self.synchronized_data.period_count} says: {new_print_count}"
+        self.context.logger.info(f"printed_number={ printed_number}")
+
+        # Create and send the payload
+        payload = UpdatePrintCountPayload(sender=self.context.agent_address, print_count = new_print_count)
+        
+        # Print the message
+        #print(f"The message has been printed {new_print_count} times")
+
+        yield from self.send_a2a_transaction(payload)
+        yield from self.wait_until_round_end()
+        self.set_done()'''

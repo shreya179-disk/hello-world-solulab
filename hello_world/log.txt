@@ -1,0 +1,140 @@
+[2024-08-09 11:36:24,762] [INFO] [hello_world] Entered in the 'registration_round' round for period 0
+[2024-08-09 11:36:24,763] [INFO] [hello_world] Start processing messages...
+[2024-08-09 11:36:24,764] [INFO] [hello_world] Entered in the 'registration_behaviour' behaviour
+[2024-08-09 11:36:24,764] [INFO] [hello_world] Synchronizing with Tendermint...
+[2024-08-09 11:36:39,816] [ERROR] [hello_world] Could not synchronize with Tendermint!
+[2024-08-09 11:36:39,817] [INFO] [hello_world] Synchronizing with Tendermint...
+[2024-08-09 11:36:48,852] [INFO] [hello_world] local height == remote == 2; Synchronization complete.
+[2024-08-09 11:36:49,539] [INFO] [hello_world] 'registration_round' round is done with event: Event.DONE
+[2024-08-09 11:36:49,539] [INFO] [hello_world] Entered in the 'collect_randomness_round' round for period 0
+[2024-08-09 11:36:49,540] [INFO] [hello_world] Entered in the 'collect_randomness_behaviour' behaviour
+[2024-08-09 11:36:49,859] [INFO] [hello_world] Retrieved DRAND values: {'round': 4258419, 'signature': '831511850843cb919d7e27c65bf9525f74cb53358559b8978697ea43a70a3a92fdc44faf399cd264da3c38e1e5a0508309f201d5c861ccab724f28c0674b8e472f7836ce8eb452b1b46baf1c740f070d0bda4bd4f12f9534b0c26b5bd49c2b3b', 'previous_signature': 'acf66e9775fc52c016730fa32ef0d2e55f6a9a57c0576d4f0cfef1d28c4a9e1429521edd89f32eb6bbf0efab3ea32fb700a857d001c7cda9c0c6cfab727bffe67c97bbd74e729031234f7b7deeacdc7b8968cdce9d81446628f3f780440793f0', 'randomness': '51680ed39cd23860e98aec672143b05dd10f5f8b0f0087329776501cec604035'}.
+[2024-08-09 11:36:50,553] [INFO] [hello_world] 'collect_randomness_round' round is done with event: Event.DONE
+[2024-08-09 11:36:50,553] [INFO] [hello_world] Entered in the 'select_keeper_round' round for period 0
+[2024-08-09 11:36:50,554] [INFO] [hello_world] Entered in the 'select_keeper_behaviour' behaviour
+[2024-08-09 11:36:50,555] [INFO] [hello_world] Selected a new keeper: 0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65.
+[2024-08-09 11:36:51,570] [INFO] [hello_world] 'select_keeper_round' round is done with event: Event.DONE
+[2024-08-09 11:36:51,571] [INFO] [hello_world] Entered in the 'print_message_round' round for period 0
+[2024-08-09 11:36:51,572] [INFO] [hello_world] Entered in the 'print_message_behaviour' behaviour
+[2024-08-09 11:36:51,572] [INFO] [hello_world] printed_message=Agent hello_world (address 0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65) in period 0 says: HELLO_WORLD!, the owner is 0x0000000000000000000000000000000000000000Hello world! The owner's address is 0x0000000000000000000000000000000000000000.
+[2024-08-09 11:36:52,585] [INFO] [hello_world] 'print_message_round' round is done with event: Event.DONE
+[2024-08-09 11:36:52,585] [INFO] [hello_world] Entered in the 'update_print_count_round' round for period 0
+[2024-08-09 11:36:52,586] [INFO] [hello_world] Entered in the 'update_print_count_behaviour' behaviour
+[2024-08-09 11:36:53,602] [INFO] [hello_world] 'update_print_count_round' round is done with event: Event.DONE
+[2024-08-09 11:36:53,603] [INFO] [hello_world] Entered in the 'reset_and_pause_round' round for period 0
+[2024-08-09 11:36:53,604] [INFO] [hello_world] Entered in the 'reset_and_pause_behaviour' behaviour
+[2024-08-09 11:36:53,604] [INFO] [hello_world] Period end.
+[2024-08-09 11:37:03,786] [INFO] [hello_world] 'reset_and_pause_round' round is done with event: Event.DONE
+[2024-08-09 11:37:03,786] [INFO] [hello_world] Entered in the 'collect_randomness_round' round for period 1
+[2024-08-09 11:37:03,787] [INFO] [hello_world] Entered in the 'collect_randomness_behaviour' behaviour
+[2024-08-09 11:37:04,296] [INFO] [hello_world] Retrieved DRAND values: {'round': 4258420, 'signature': 'a9621e8e6561a2eebcbf3f4f8aaad73bdbfb6d31029706d42a96b41c7336085f55c71eb0193d22a443185e9f5d23b56711d5633ba0e4f7461a92cb4f79f493622b5b9d328e7aeed45abc1c3b4d1eb2877483d2f2fd74d402bfb6ad48c0480b31', 'previous_signature': '831511850843cb919d7e27c65bf9525f74cb53358559b8978697ea43a70a3a92fdc44faf399cd264da3c38e1e5a0508309f201d5c861ccab724f28c0674b8e472f7836ce8eb452b1b46baf1c740f070d0bda4bd4f12f9534b0c26b5bd49c2b3b', 'randomness': '1ef7d5dd5086657d9de20423e1cccd6206806151249fe26f612da95d0788f197'}.
+[2024-08-09 11:37:04,804] [INFO] [hello_world] 'collect_randomness_round' round is done with event: Event.DONE
+[2024-08-09 11:37:04,804] [INFO] [hello_world] Entered in the 'select_keeper_round' round for period 1
+[2024-08-09 11:37:04,805] [INFO] [hello_world] Entered in the 'select_keeper_behaviour' behaviour
+[2024-08-09 11:37:04,806] [INFO] [hello_world] Selected a new keeper: 0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65.
+[2024-08-09 11:37:05,824] [INFO] [hello_world] 'select_keeper_round' round is done with event: Event.DONE
+[2024-08-09 11:37:05,824] [INFO] [hello_world] Entered in the 'print_message_round' round for period 1
+[2024-08-09 11:37:05,825] [INFO] [hello_world] Entered in the 'print_message_behaviour' behaviour
+[2024-08-09 11:37:05,825] [INFO] [hello_world] printed_message=Agent hello_world (address 0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65) in period 1 says: HELLO_WORLD!, the owner is 0x0000000000000000000000000000000000000000Hello world! The owner's address is 0x0000000000000000000000000000000000000000.
+[2024-08-09 11:37:06,840] [INFO] [hello_world] 'print_message_round' round is done with event: Event.DONE
+[2024-08-09 11:37:06,840] [INFO] [hello_world] Entered in the 'update_print_count_round' round for period 1
+[2024-08-09 11:37:06,841] [INFO] [hello_world] Entered in the 'update_print_count_behaviour' behaviour
+[2024-08-09 11:37:07,860] [INFO] [hello_world] 'update_print_count_round' round is done with event: Event.DONE
+[2024-08-09 11:37:07,860] [INFO] [hello_world] Entered in the 'reset_and_pause_round' round for period 1
+[2024-08-09 11:37:07,861] [INFO] [hello_world] Entered in the 'reset_and_pause_behaviour' behaviour
+[2024-08-09 11:37:07,861] [INFO] [hello_world] Period end.
+[2024-08-09 11:37:18,031] [INFO] [hello_world] 'reset_and_pause_round' round is done with event: Event.DONE
+[2024-08-09 11:37:18,031] [INFO] [hello_world] Entered in the 'collect_randomness_round' round for period 2
+[2024-08-09 11:37:18,032] [INFO] [hello_world] Entered in the 'collect_randomness_behaviour' behaviour
+[2024-08-09 11:37:18,103] [INFO] [hello_world] Retrieved DRAND values: {'round': 4258420, 'signature': 'a9621e8e6561a2eebcbf3f4f8aaad73bdbfb6d31029706d42a96b41c7336085f55c71eb0193d22a443185e9f5d23b56711d5633ba0e4f7461a92cb4f79f493622b5b9d328e7aeed45abc1c3b4d1eb2877483d2f2fd74d402bfb6ad48c0480b31', 'previous_signature': '831511850843cb919d7e27c65bf9525f74cb53358559b8978697ea43a70a3a92fdc44faf399cd264da3c38e1e5a0508309f201d5c861ccab724f28c0674b8e472f7836ce8eb452b1b46baf1c740f070d0bda4bd4f12f9534b0c26b5bd49c2b3b', 'randomness': '1ef7d5dd5086657d9de20423e1cccd6206806151249fe26f612da95d0788f197'}.
+[2024-08-09 11:37:19,045] [INFO] [hello_world] 'collect_randomness_round' round is done with event: Event.DONE
+[2024-08-09 11:37:19,046] [INFO] [hello_world] Entered in the 'select_keeper_round' round for period 2
+[2024-08-09 11:37:19,046] [INFO] [hello_world] Entered in the 'select_keeper_behaviour' behaviour
+[2024-08-09 11:37:19,047] [INFO] [hello_world] Selected a new keeper: 0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65.
+[2024-08-09 11:37:20,068] [INFO] [hello_world] 'select_keeper_round' round is done with event: Event.DONE
+[2024-08-09 11:37:20,068] [INFO] [hello_world] Entered in the 'print_message_round' round for period 2
+[2024-08-09 11:37:20,069] [INFO] [hello_world] Entered in the 'print_message_behaviour' behaviour
+[2024-08-09 11:37:20,069] [INFO] [hello_world] printed_message=Agent hello_world (address 0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65) in period 2 says: HELLO_WORLD!, the owner is 0x0000000000000000000000000000000000000000Hello world! The owner's address is 0x0000000000000000000000000000000000000000.
+[2024-08-09 11:37:21,083] [INFO] [hello_world] 'print_message_round' round is done with event: Event.DONE
+[2024-08-09 11:37:21,083] [INFO] [hello_world] Entered in the 'update_print_count_round' round for period 2
+[2024-08-09 11:37:21,084] [INFO] [hello_world] Entered in the 'update_print_count_behaviour' behaviour
+[2024-08-09 11:37:22,099] [INFO] [hello_world] 'update_print_count_round' round is done with event: Event.DONE
+[2024-08-09 11:37:22,100] [INFO] [hello_world] Entered in the 'reset_and_pause_round' round for period 2
+[2024-08-09 11:37:22,100] [INFO] [hello_world] Entered in the 'reset_and_pause_behaviour' behaviour
+[2024-08-09 11:37:22,101] [INFO] [hello_world] Period end.
+[2024-08-09 11:37:32,276] [INFO] [hello_world] 'reset_and_pause_round' round is done with event: Event.DONE
+[2024-08-09 11:37:32,276] [INFO] [hello_world] Entered in the 'collect_randomness_round' round for period 3
+[2024-08-09 11:37:32,278] [INFO] [hello_world] Entered in the 'collect_randomness_behaviour' behaviour
+[2024-08-09 11:37:32,661] [INFO] [hello_world] Retrieved DRAND values: {'round': 4258421, 'signature': '8d00d12c546004eee86da7388b82edafa951ceb3decf6729be0314387ebcacc2173681957176ad612a9e0cb06004881811f8b023cbbcb16ba2572f155c46e32f1317c0fbd853938eabf435b4f46fd8c5bdbb630441d0cec3540dea5ec0e93fa4', 'previous_signature': 'a9621e8e6561a2eebcbf3f4f8aaad73bdbfb6d31029706d42a96b41c7336085f55c71eb0193d22a443185e9f5d23b56711d5633ba0e4f7461a92cb4f79f493622b5b9d328e7aeed45abc1c3b4d1eb2877483d2f2fd74d402bfb6ad48c0480b31', 'randomness': '55e4cddba25efe34bdc3cd292afbbb38d663713348df4a20d215cb7451163a72'}.
+[2024-08-09 11:37:33,292] [INFO] [hello_world] 'collect_randomness_round' round is done with event: Event.DONE
+[2024-08-09 11:37:33,293] [INFO] [hello_world] Entered in the 'select_keeper_round' round for period 3
+[2024-08-09 11:37:33,293] [INFO] [hello_world] Entered in the 'select_keeper_behaviour' behaviour
+[2024-08-09 11:37:33,294] [INFO] [hello_world] Selected a new keeper: 0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65.
+[2024-08-09 11:37:34,309] [INFO] [hello_world] 'select_keeper_round' round is done with event: Event.DONE
+[2024-08-09 11:37:34,309] [INFO] [hello_world] Entered in the 'print_message_round' round for period 3
+[2024-08-09 11:37:34,310] [INFO] [hello_world] Entered in the 'print_message_behaviour' behaviour
+[2024-08-09 11:37:34,310] [INFO] [hello_world] printed_message=Agent hello_world (address 0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65) in period 3 says: HELLO_WORLD!, the owner is 0x0000000000000000000000000000000000000000Hello world! The owner's address is 0x0000000000000000000000000000000000000000.
+[2024-08-09 11:37:35,325] [INFO] [hello_world] 'print_message_round' round is done with event: Event.DONE
+[2024-08-09 11:37:35,325] [INFO] [hello_world] Entered in the 'update_print_count_round' round for period 3
+[2024-08-09 11:37:35,326] [INFO] [hello_world] Entered in the 'update_print_count_behaviour' behaviour
+[2024-08-09 11:37:36,341] [INFO] [hello_world] 'update_print_count_round' round is done with event: Event.DONE
+[2024-08-09 11:37:36,341] [INFO] [hello_world] Entered in the 'reset_and_pause_round' round for period 3
+[2024-08-09 11:37:36,342] [INFO] [hello_world] Entered in the 'reset_and_pause_behaviour' behaviour
+[2024-08-09 11:37:36,342] [INFO] [hello_world] Period end.
+[2024-08-09 11:37:46,526] [INFO] [hello_world] 'reset_and_pause_round' round is done with event: Event.DONE
+[2024-08-09 11:37:46,526] [INFO] [hello_world] Entered in the 'collect_randomness_round' round for period 4
+[2024-08-09 11:37:46,527] [INFO] [hello_world] Entered in the 'collect_randomness_behaviour' behaviour
+[2024-08-09 11:37:46,596] [INFO] [hello_world] Retrieved DRAND values: {'round': 4258421, 'signature': '8d00d12c546004eee86da7388b82edafa951ceb3decf6729be0314387ebcacc2173681957176ad612a9e0cb06004881811f8b023cbbcb16ba2572f155c46e32f1317c0fbd853938eabf435b4f46fd8c5bdbb630441d0cec3540dea5ec0e93fa4', 'previous_signature': 'a9621e8e6561a2eebcbf3f4f8aaad73bdbfb6d31029706d42a96b41c7336085f55c71eb0193d22a443185e9f5d23b56711d5633ba0e4f7461a92cb4f79f493622b5b9d328e7aeed45abc1c3b4d1eb2877483d2f2fd74d402bfb6ad48c0480b31', 'randomness': '55e4cddba25efe34bdc3cd292afbbb38d663713348df4a20d215cb7451163a72'}.
+[2024-08-09 11:37:47,550] [INFO] [hello_world] 'collect_randomness_round' round is done with event: Event.DONE
+[2024-08-09 11:37:47,550] [INFO] [hello_world] Entered in the 'select_keeper_round' round for period 4
+[2024-08-09 11:37:47,551] [INFO] [hello_world] Entered in the 'select_keeper_behaviour' behaviour
+[2024-08-09 11:37:47,551] [INFO] [hello_world] Selected a new keeper: 0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65.
+[2024-08-09 11:37:48,564] [INFO] [hello_world] 'select_keeper_round' round is done with event: Event.DONE
+[2024-08-09 11:37:48,564] [INFO] [hello_world] Entered in the 'print_message_round' round for period 4
+[2024-08-09 11:37:48,565] [INFO] [hello_world] Entered in the 'print_message_behaviour' behaviour
+[2024-08-09 11:37:48,566] [INFO] [hello_world] printed_message=Agent hello_world (address 0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65) in period 4 says: HELLO_WORLD!, the owner is 0x0000000000000000000000000000000000000000Hello world! The owner's address is 0x0000000000000000000000000000000000000000.
+[2024-08-09 11:37:49,582] [INFO] [hello_world] 'print_message_round' round is done with event: Event.DONE
+[2024-08-09 11:37:49,582] [INFO] [hello_world] Entered in the 'update_print_count_round' round for period 4
+[2024-08-09 11:37:49,583] [INFO] [hello_world] Entered in the 'update_print_count_behaviour' behaviour
+[2024-08-09 11:37:50,597] [INFO] [hello_world] 'update_print_count_round' round is done with event: Event.DONE
+[2024-08-09 11:37:50,598] [INFO] [hello_world] Entered in the 'reset_and_pause_round' round for period 4
+[2024-08-09 11:37:50,598] [INFO] [hello_world] Entered in the 'reset_and_pause_behaviour' behaviour
+[2024-08-09 11:37:50,599] [INFO] [hello_world] Period end.
+[2024-08-09 11:38:00,778] [INFO] [hello_world] 'reset_and_pause_round' round is done with event: Event.DONE
+[2024-08-09 11:38:00,778] [INFO] [hello_world] Entered in the 'collect_randomness_round' round for period 5
+[2024-08-09 11:38:00,779] [INFO] [hello_world] Entered in the 'collect_randomness_behaviour' behaviour
+[2024-08-09 11:38:00,874] [INFO] [hello_world] Retrieved DRAND values: {'round': 4258421, 'signature': '8d00d12c546004eee86da7388b82edafa951ceb3decf6729be0314387ebcacc2173681957176ad612a9e0cb06004881811f8b023cbbcb16ba2572f155c46e32f1317c0fbd853938eabf435b4f46fd8c5bdbb630441d0cec3540dea5ec0e93fa4', 'previous_signature': 'a9621e8e6561a2eebcbf3f4f8aaad73bdbfb6d31029706d42a96b41c7336085f55c71eb0193d22a443185e9f5d23b56711d5633ba0e4f7461a92cb4f79f493622b5b9d328e7aeed45abc1c3b4d1eb2877483d2f2fd74d402bfb6ad48c0480b31', 'randomness': '55e4cddba25efe34bdc3cd292afbbb38d663713348df4a20d215cb7451163a72'}.
+[2024-08-09 11:38:01,798] [INFO] [hello_world] 'collect_randomness_round' round is done with event: Event.DONE
+[2024-08-09 11:38:01,798] [INFO] [hello_world] Entered in the 'select_keeper_round' round for period 5
+[2024-08-09 11:38:01,799] [INFO] [hello_world] Entered in the 'select_keeper_behaviour' behaviour
+[2024-08-09 11:38:01,800] [INFO] [hello_world] Selected a new keeper: 0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65.
+[2024-08-09 11:38:02,814] [INFO] [hello_world] 'select_keeper_round' round is done with event: Event.DONE
+[2024-08-09 11:38:02,814] [INFO] [hello_world] Entered in the 'print_message_round' round for period 5
+[2024-08-09 11:38:02,815] [INFO] [hello_world] Entered in the 'print_message_behaviour' behaviour
+[2024-08-09 11:38:02,815] [INFO] [hello_world] printed_message=Agent hello_world (address 0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65) in period 5 says: HELLO_WORLD!, the owner is 0x0000000000000000000000000000000000000000Hello world! The owner's address is 0x0000000000000000000000000000000000000000.
+[2024-08-09 11:38:03,831] [INFO] [hello_world] 'print_message_round' round is done with event: Event.DONE
+[2024-08-09 11:38:03,831] [INFO] [hello_world] Entered in the 'update_print_count_round' round for period 5
+[2024-08-09 11:38:03,832] [INFO] [hello_world] Entered in the 'update_print_count_behaviour' behaviour
+[2024-08-09 11:38:04,863] [INFO] [hello_world] 'update_print_count_round' round is done with event: Event.DONE
+[2024-08-09 11:38:04,863] [INFO] [hello_world] Entered in the 'reset_and_pause_round' round for period 5
+[2024-08-09 11:38:04,865] [INFO] [hello_world] Entered in the 'reset_and_pause_behaviour' behaviour
+[2024-08-09 11:38:04,865] [INFO] [hello_world] Period end.
+[2024-08-09 11:38:15,309] [INFO] [hello_world] 'reset_and_pause_round' round is done with event: Event.DONE
+[2024-08-09 11:38:15,309] [INFO] [hello_world] Entered in the 'collect_randomness_round' round for period 6
+[2024-08-09 11:38:15,310] [INFO] [hello_world] Entered in the 'collect_randomness_behaviour' behaviour
+[2024-08-09 11:38:16,066] [INFO] [hello_world] Retrieved DRAND values: {'round': 4258422, 'signature': 'ab83831c5b39b6f01996cc57e2afe3acee260effd9499110ac0deaa3012f14112a55ace58a5906f20e1bd9d7205e970519768d253398f2f2876eb94ec2eb659bd44c986448eb73b50d3f1d39c32c2936d1726241ae2698f191ef3a7402a74a07', 'previous_signature': '8d00d12c546004eee86da7388b82edafa951ceb3decf6729be0314387ebcacc2173681957176ad612a9e0cb06004881811f8b023cbbcb16ba2572f155c46e32f1317c0fbd853938eabf435b4f46fd8c5bdbb630441d0cec3540dea5ec0e93fa4', 'randomness': '190fed17d78e8b5197ef7f8b8376f4c39eb3605a3fd8b567712f940d87a272ee'}.
+[2024-08-09 11:38:16,328] [INFO] [hello_world] 'collect_randomness_round' round is done with event: Event.DONE
+[2024-08-09 11:38:16,328] [INFO] [hello_world] Entered in the 'select_keeper_round' round for period 6
+[2024-08-09 11:38:16,330] [INFO] [hello_world] Entered in the 'select_keeper_behaviour' behaviour
+[2024-08-09 11:38:16,330] [INFO] [hello_world] Selected a new keeper: 0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65.
+[2024-08-09 11:38:17,343] [INFO] [hello_world] 'select_keeper_round' round is done with event: Event.DONE
+[2024-08-09 11:38:17,343] [INFO] [hello_world] Entered in the 'print_message_round' round for period 6
+[2024-08-09 11:38:17,344] [INFO] [hello_world] Entered in the 'print_message_behaviour' behaviour
+[2024-08-09 11:38:17,345] [INFO] [hello_world] printed_message=Agent hello_world (address 0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65) in period 6 says: HELLO_WORLD!, the owner is 0x0000000000000000000000000000000000000000Hello world! The owner's address is 0x0000000000000000000000000000000000000000.
+[2024-08-09 11:38:18,361] [INFO] [hello_world] 'print_message_round' round is done with event: Event.DONE
+[2024-08-09 11:38:18,361] [INFO] [hello_world] Entered in the 'update_print_count_round' round for period 6
+[2024-08-09 11:38:18,362] [INFO] [hello_world] Entered in the 'update_print_count_behaviour' behaviour
+[2024-08-09 11:38:19,378] [INFO] [hello_world] 'update_print_count_round' round is done with event: Event.DONE
+[2024-08-09 11:38:19,378] [INFO] [hello_world] Entered in the 'reset_and_pause_round' round for period 6
+[2024-08-09 11:38:19,379] [INFO] [hello_world] Entered in the 'reset_and_pause_behaviour' behaviour
+[2024-08-09 11:38:19,379] [INFO] [hello_world] Period end.

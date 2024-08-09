@@ -77,10 +77,10 @@ class SynchronizedData(
         """Get the print count."""
         return cast(int, self.db.get("print_count", 0))
     
-    def update(self, **kwargs) -> "SynchronizedData":
+    '''def update(self, **kwargs) -> "SynchronizedData":
         new_instance = super().update(**kwargs)
         new_instance.db["print_count"] = kwargs.get("print_count", self.print_count)
-        return new_instance
+        return new_instance'''
     
     ######################## edited here#################################
 
