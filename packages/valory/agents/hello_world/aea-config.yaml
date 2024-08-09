@@ -25,7 +25,7 @@ protocols:
 skills:
 - valory/abstract_abci:0.1.0:bafybeicr24cgdovqdp4bh25bpun77v7u33maydwuxwled3tuhyiaepw5gu
 - valory/abstract_round_abci:0.1.0:bafybeia6lemk5s64f26qjnd2746s5mufpzxuaf5frsqhfbr62kk3ma6sp4
-- valory/hello_world_abci:0.1.0:bafybeiebittgfcz4idj633fkrvu6qle2ajekdjxpp7slggyur7vv7s7hrq
+- valory/hello_world_abci:0.1.0:bafybeiekpjhl2d6iugg7ymjjrf7k7w34c2w6zqilkshddyn6orbbtfgvxe
 default_ledger: ethereum
 required_ledgers:
 - ethereum
@@ -69,13 +69,14 @@ models:
       log_dir: ${str:/benchmarks}
   params:
     args:
+      owner: ${str:0x0000000000000000000000000000000000000000}
       hello_world_message: ${str:HELLO_WORLD!}
       reset_pause_duration: ${int:10}
       service_registry_address: ${str:null}
       share_tm_config_on_startup: ${bool:false}
       on_chain_service_id: ${int:null}
       setup:
-        all_participants: ${list:[]}
+        all_participants: ${list:["0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65"]}
         safe_contract_address: ${str:'0x0000000000000000000000000000000000000000'}
         consensus_threshold: ${int:null}
       tendermint_url: ${str:http://localhost:26657}
